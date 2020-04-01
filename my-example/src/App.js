@@ -6,7 +6,6 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = { firstvalue: 0, secondvalue: 0, ansvalue: 0, contacts: [] };
-
     this.handleFirstNumberChange = this.handleFirstNumberChange.bind(this);
     this.handleSecondNumberChange = this.handleSecondNumberChange.bind(this);
     this.handleAddSubmit = this.handleAddSubmit.bind(this);
@@ -38,7 +37,6 @@ class App extends React.Component {
   setDefault(event) {
     this.setState({ ansvalue: 0 })
   }
-
 
   handleSubSubmit(event) {
     console.log(this.state.firstvalue);
