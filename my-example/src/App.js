@@ -4,7 +4,6 @@ import 'react-tabs/style/react-tabs.css';
 
 class App extends React.Component {
   constructor(props) {
-
     super(props);
     this.state = { firstvalue: 0, secondvalue: 0, ansvalue: 0, contacts: [] };
 
