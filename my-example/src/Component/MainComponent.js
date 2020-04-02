@@ -1,5 +1,6 @@
 import React from 'react';
 import SiddhuFirstFunctionComponent from './SiddhuFirstFunctionComponent';
+import JSXComponent from './JSXComponent'
 
 class MainComponent extends React.Component {
 
@@ -13,7 +14,7 @@ class MainComponent extends React.Component {
             <div className="MainComponent">
                 <h1>this is main component</h1>
                 <SiddhuFirstFunctionComponent name="siddhuprop" />
-            </div>
+                <JSXComponent />            </div>
         )
     }
 
