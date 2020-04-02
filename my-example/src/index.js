@@ -4,7 +4,8 @@ import './index.css';
 import App from './App';
 import SiddhuFirstFunctionComponent from './Component/SiddhuFirstFunctionComponent'
 import MainComponent from './Component/MainComponent'
-import * as serviceWorker from './serviceWorker';
+import * as serviceWorker from './serviceWorker'
+
 
 //ReactDOM.render(<App />, document.getElementById('root'));
 //Now we will upload our component for testing
