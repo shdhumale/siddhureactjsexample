@@ -29,7 +29,6 @@ export class EventBinding extends Component {
             }
         )
     }
-
     render() {
         return (
             <div>
