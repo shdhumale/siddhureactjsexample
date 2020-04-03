@@ -1,5 +1,7 @@
-import React, { Component } from 'react'
-import ChildComponent from './ChildComponent'
+import React, { Component } from 'react';
+import ChildComponent from './ChildComponent';
+import ChildClassComponent from './ChildClassComponent'
+
 
 class ParentComponent extends Component {
 
@@ -11,6 +13,7 @@ class ParentComponent extends Component {
         return (
             <div>
                 <ChildComponent callParentMethod={this.parentMethod} />
+                <ChildClassComponent callParentMethodinClass={this.parentMethod} />
             </div>
         )
     }
