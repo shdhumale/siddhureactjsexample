@@ -4,6 +4,7 @@ import JSXComponent from './JSXComponent'
 import SiddhuClassComponent from './SiddhuClassComponent'
 import SiddhuStateButton from './SiddhuStateButton'
 import EventBinding from './EventBinding'
+import ParentComponent from './ParentComponent'
 
 class MainComponent extends React.Component {
 
@@ -26,7 +27,8 @@ class MainComponent extends React.Component {
                     <button>my class component button</button>
                 </SiddhuClassComponent> */}
                 {/* <SiddhuStateButton myValue="1" /> */}
-                <EventBinding />
+                {/*  <EventBinding /> */}
+                <ParentComponent />
             </div>
         )
     }
