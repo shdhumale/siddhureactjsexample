@@ -24,7 +24,7 @@ class MainComponent extends React.Component {
                     <p>this is class component paragraph</p>
                     <button>my class component button</button>
                 </SiddhuClassComponent> */}
-                <SiddhuStateButton />
+                <SiddhuStateButton myValue="1" />
             </div>
         )
     }

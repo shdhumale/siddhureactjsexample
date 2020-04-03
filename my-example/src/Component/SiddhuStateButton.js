@@ -26,10 +26,10 @@ class SiddhuStateButton extends React.Component {
             }, () => console.log('--------inside call back-------' + this.state.count)
         ) */
 
-        this.setState((prevState) => (
+        this.setState((prevState, props) => (
             {
                 message: 'Message is changed on button click',
-                count: prevState.count + 1
+                count: prevState.count + Number(this.props.myValue)
             }//, () => console.log('--------inside call back-------' + this.state.count)
         ))
         console.log('-----outside call back----------' + this.state.count);
