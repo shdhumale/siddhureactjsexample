@@ -6,7 +6,9 @@ import ChildClassComponent from './ChildClassComponent'
 class ParentComponent extends Component {
 
     parentMethod(argument) {
-        alert("hello" + argument);
+        //alert("hello" + argument);
+        //using Template Literal
+        alert(`hello  ${argument}`);
     }
 
     render() {
