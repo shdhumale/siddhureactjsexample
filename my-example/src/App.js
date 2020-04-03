@@ -14,6 +14,7 @@ class App extends React.Component {
     this.handleMulSubmit = this.handleMulSubmit.bind(this);
     this.handleWSSubmit = this.handleWSSubmit.bind(this);
     this.setDefault = this.setDefault.bind(this);
+    //binding can be done by three method i.e. BRFC = binding in constructor, bindng in Render, bding in render using () => and in constructor and final using /function = () => /
   }
 
   handleFirstNumberChange(event) {
@@ -39,12 +40,23 @@ class App extends React.Component {
   }
 
   handleSubSubmit(event) {
+
     console.log(this.state.firstvalue);
     console.log(this.state.secondvalue);
     let x = this.state.firstvalue - this.state.secondvalue;
     this.setState({ ansvalue: x })
   }
 
+  /* 
+  //We can do binding like below also
+  handleSubSubmit = () =>
+  {
+    console.log(this.state.firstvalue);
+    console.log(this.state.secondvalue);
+    let x = this.state.firstvalue - this.state.secondvalue;
+    this.setState({ ansvalue: x })
+  }
+ */
   handleDivSubmit(event) {
     console.log(this.state.firstvalue);
     console.log(this.state.secondvalue);
@@ -124,6 +136,9 @@ class App extends React.Component {
               Second Value:
                 <input type="number" onChange={this.handleSecondNumberChange} />
             </label>
+
+            {/*   <input type="button" onClick={this.handleSubSubmit.bind(this)} value="Subtraction" />
+            <input type="button" onClick={() => this.handleAddSubmit()} value="Subtraction" /> */}
             <input type="button" onClick={this.handleSubSubmit} value="Subtraction" />
             <label>
               Answer:{this.state.ansvalue}

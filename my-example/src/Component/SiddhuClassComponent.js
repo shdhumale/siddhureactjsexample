@@ -6,10 +6,11 @@ class SiddhuClassComponent extends React.Component {
     }
 
     render() {
-
+        //using destructuring
+        const { myPropName } = this.props
         return (
             <div className="MainComponent">
-                <h1>this is Class  component {this.props.myPropName}</h1>
+                <h1>this is Class  component {myPropName}</h1>
                 {this.props.children}
             </div>
         )
