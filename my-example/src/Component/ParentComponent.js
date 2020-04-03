@@ -7,7 +7,7 @@ class ParentComponent extends Component {
 
     parentMethod(argument) {
         //alert("hello" + argument);
-        //using Template Literal
+        //using Template Literal i.e. ` and we dont neet to use + operator here
         alert(`hello  ${argument}`);
     }
 
