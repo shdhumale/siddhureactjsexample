@@ -5,6 +5,7 @@ import SiddhuClassComponent from './SiddhuClassComponent'
 import SiddhuStateButton from './SiddhuStateButton'
 import EventBinding from './EventBinding'
 import ParentComponent from './ParentComponent'
+import ListArrayExample from './ListArrayExample'
 
 class MainComponent extends React.Component {
 
@@ -28,7 +29,8 @@ class MainComponent extends React.Component {
                 </SiddhuClassComponent> */}
                 {/* <SiddhuStateButton myValue="1" /> */}
                 {/*  <EventBinding /> */}
-                <ParentComponent />
+                {/* <ParentComponent /> */}
+                <ListArrayExample />
             </div>
         )
     }
