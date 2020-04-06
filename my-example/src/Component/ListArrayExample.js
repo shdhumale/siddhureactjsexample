@@ -13,7 +13,7 @@ function ListArrayExample() {
     ]
 
     //map has two parameter (function name => function body)
-    const newPerson = persons.map(innerelement => <Person innerelement={innerelement}></Person>)
+    const newPerson = persons.map(innerelement => <Person key={innerelement.id} innerelement={innerelement}></Person>)
 
     return (
         <div>

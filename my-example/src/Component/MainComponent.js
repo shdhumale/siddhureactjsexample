@@ -6,6 +6,12 @@ import SiddhuStateButton from './SiddhuStateButton'
 import EventBinding from './EventBinding'
 import ParentComponent from './ParentComponent'
 import ListArrayExample from './ListArrayExample'
+import CSSComponent from './CSSComponent'
+import InlineStyle from './InlineStyle'
+import '../siddhu.css'
+import styles from '../siddhu.module.css'
+import BasicForm from './BasicForm'
+import LifeCycleA from './LifeCycleA'
 
 class MainComponent extends React.Component {
 
@@ -17,7 +23,8 @@ class MainComponent extends React.Component {
     render() {
         return (
             <div className="MainComponent">
-                <h1>this is main component</h1>
+                {/* <h1 className='primary'>this is main component with simple CSS</h1>
+                <h1 className={styles.primary}>this is main component with module css</h1> */}
                 {/* <SiddhuFirstFunctionComponent name="siddhuprop" /> 
                 <JSXComponent name="siddhu">
                     <p>this is my paragraph</p>
@@ -30,7 +37,11 @@ class MainComponent extends React.Component {
                 {/* <SiddhuStateButton myValue="1" /> */}
                 {/*  <EventBinding /> */}
                 {/* <ParentComponent /> */}
-                <ListArrayExample />
+                {/* <ListArrayExample /> */}
+                {/* <CSSComponent /> */}
+                {/* <InlineStyle /> */}
+                {/* <BasicForm /> */}
+                <LifeCycleA />
             </div>
         )
     }
