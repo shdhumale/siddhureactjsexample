@@ -12,6 +12,8 @@ import '../siddhu.css'
 import styles from '../siddhu.module.css'
 import BasicForm from './BasicForm'
 import LifeCycleA from './LifeCycleA'
+import Table from './Table'
+import ParentComponentRegPure from './ParentComponentRegPure'
 
 class MainComponent extends React.Component {
 
@@ -41,7 +43,9 @@ class MainComponent extends React.Component {
                 {/* <CSSComponent /> */}
                 {/* <InlineStyle /> */}
                 {/* <BasicForm /> */}
-                <LifeCycleA />
+                {/* <LifeCycleA /> */}
+                {/* <Table /> */}
+                <ParentComponentRegPure />
             </div>
         )
     }
