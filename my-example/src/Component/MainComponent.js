@@ -14,6 +14,8 @@ import BasicForm from './BasicForm'
 import LifeCycleA from './LifeCycleA'
 import Table from './Table'
 import ParentComponentRegPure from './ParentComponentRegPure'
+import RefClass from './RefClass'
+import AccessChildMethodFromParent from './AccessChildMethodFromParent'
 
 class MainComponent extends React.Component {
 
@@ -45,7 +47,9 @@ class MainComponent extends React.Component {
                 {/* <BasicForm /> */}
                 {/* <LifeCycleA /> */}
                 {/* <Table /> */}
-                <ParentComponentRegPure />
+                {/* <ParentComponentRegPure /> */}
+                {/* <RefClass /> */}
+                <AccessChildMethodFromParent />
             </div>
         )
     }
