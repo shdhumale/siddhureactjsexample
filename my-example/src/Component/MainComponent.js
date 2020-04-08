@@ -16,6 +16,8 @@ import Table from './Table'
 import ParentComponentRegPure from './ParentComponentRegPure'
 import RefClass from './RefClass'
 import AccessChildMethodFromParent from './AccessChildMethodFromParent'
+import RefParentComponent from './RefParentComponent'
+import PortalRootComponent from './PortalRootComponent'
 
 class MainComponent extends React.Component {
 
@@ -49,7 +51,9 @@ class MainComponent extends React.Component {
                 {/* <Table /> */}
                 {/* <ParentComponentRegPure /> */}
                 {/* <RefClass /> */}
-                <AccessChildMethodFromParent />
+                {/* <AccessChildMethodFromParent /> */}
+                {/* <RefParentComponent /> */}
+                <PortalRootComponent />
             </div>
         )
     }
