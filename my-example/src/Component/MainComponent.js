@@ -18,6 +18,7 @@ import RefClass from './RefClass'
 import AccessChildMethodFromParent from './AccessChildMethodFromParent'
 import RefParentComponent from './RefParentComponent'
 import PortalRootComponent from './PortalRootComponent'
+import HeroMainComponent from './HeroMainComponent'
 
 class MainComponent extends React.Component {
 
@@ -53,7 +54,8 @@ class MainComponent extends React.Component {
                 {/* <RefClass /> */}
                 {/* <AccessChildMethodFromParent /> */}
                 {/* <RefParentComponent /> */}
-                <PortalRootComponent />
+                {/* <PortalRootComponent /> */}
+                <HeroMainComponent />
             </div>
         )
     }
