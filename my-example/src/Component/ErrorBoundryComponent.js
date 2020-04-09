@@ -17,8 +17,8 @@ export class ErrorBoundryComponent extends Component {
     }
 
     componentDidCatch(error, info) {
-        console.log(`error --------------------------- ${error}`);
-        console.log(`log ----------------------------- ${info}`)
+        console.log(error);
+        console.log(info);
     }
 
     render() {
