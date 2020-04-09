@@ -19,6 +19,8 @@ import AccessChildMethodFromParent from './AccessChildMethodFromParent'
 import RefParentComponent from './RefParentComponent'
 import PortalRootComponent from './PortalRootComponent'
 import HeroMainComponent from './HeroMainComponent'
+import ClickIncrementComponent from './ClickIncrementComponent'
+import MouseHoverIncrement from './MouseHoverIncrement'
 
 class MainComponent extends React.Component {
 
@@ -55,7 +57,9 @@ class MainComponent extends React.Component {
                 {/* <AccessChildMethodFromParent /> */}
                 {/* <RefParentComponent /> */}
                 {/* <PortalRootComponent /> */}
-                <HeroMainComponent />
+                {/* <HeroMainComponent /> */}
+                <ClickIncrementComponent />
+                <MouseHoverIncrement />
             </div>
         )
     }
