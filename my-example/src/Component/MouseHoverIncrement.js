@@ -32,4 +32,4 @@ export class MouseHoverIncrement extends Component {
 }
 
 //export default MyHigherOrderComponent(MouseHoverIncrement)
-export default MyIncrementHOC(MouseHoverIncrement)
+export default MyIncrementHOC(MouseHoverIncrement, 5)

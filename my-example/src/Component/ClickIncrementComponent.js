@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 //import MyHigherOrderComponent from './MyHigherOrderComponent'
 import MyIncrementHOC from './MyIncrementHOC'
 
-export class ClickIncrementComponent extends Component {
+class ClickIncrementComponent extends Component {
     /*  constructor(props) {
          super(props)
  
@@ -19,14 +19,16 @@ export class ClickIncrementComponent extends Component {
      }
   */
     render() {
+
         return (
             <div>
+                <h1>{this.props.name}</h1>
                 <h1>{/* {this.state.count} */} {this.props.count}</h1>
-                <button onClick={this.props.clickHandler}>Click {/* {this.props.name} */} {/* {this.state.count} */}  {this.props.count} button</button>
+                <button onClick={this.props.clickHandler}> {this.props.name} Click {/* {this.props.name} */} {/* {this.state.count} */}  {this.props.count} button</button>
             </div>
         )
     }
 }
 
 //export default MyHigherOrderComponent(ClickIncrementComponent)
-export default MyIncrementHOC(ClickIncrementComponent)
+export default MyIncrementHOC(ClickIncrementComponent, 3)

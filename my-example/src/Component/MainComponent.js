@@ -58,7 +58,7 @@ class MainComponent extends React.Component {
                 {/* <RefParentComponent /> */}
                 {/* <PortalRootComponent /> */}
                 {/* <HeroMainComponent /> */}
-                <ClickIncrementComponent />
+                <ClickIncrementComponent name="siddhuclickprop" incrementValue="7" />
                 <MouseHoverIncrement />
             </div>
         )

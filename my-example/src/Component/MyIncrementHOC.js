@@ -1,6 +1,6 @@
 import React from 'react'
 
-function MyIncrementHOC(OriginalComponent) {
+function MyIncrementHOC(OriginalComponent, IncrementValue) {
 
     class MyNewComponent extends React.Component {
 
@@ -15,15 +15,19 @@ function MyIncrementHOC(OriginalComponent) {
         }
 
         clickHandler() {
+            console.log({ ...this.props })
             this.setState({
-                count: this.state.count + 1,
+                //below line code will work only for ClickIncrementComponent as from that only we are sending incrementValue as prop ano
+                //not from MouseHoverIncrement
+                // count: this.state.count + Number(this.props.incrementValue),
+                count: this.state.count + IncrementValue,
                 color: 'Orange'
             })
         }
 
         render() {
             return (
-                <OriginalComponent count={this.state.count} color={this.state.color} clickHandler={this.clickHandler} />
+                <OriginalComponent count={this.state.count} color={this.state.color} clickHandler={this.clickHandler} {...this.props} />
             )
         }
     }
