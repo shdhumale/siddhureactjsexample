@@ -25,6 +25,8 @@ import UserPropRender from './UserPropRender'
 import ClickRenderPropComponent from './ClickRenderPropComponent'
 import MouseHoverPropComponent from './MouseHoverPropComponent'
 import MainRenderProp from './MainRenderProp'
+import AComponent from './AComponent'
+import { UserProvider } from './ContextComponent'
 
 class MainComponent extends React.Component {
 
@@ -68,8 +70,12 @@ class MainComponent extends React.Component {
                 {/*  <UserPropRender name={(isLoggedIn) => isLoggedIn ? "Siddharatha Dhumale" : "Guest"} /> */}
                 {/* <ClickRenderPropComponent />
                 <MouseHoverPropComponent /> */}
-                <MainRenderProp render={(count, clickHandler) => (<ClickRenderPropComponent count={count} clickHandler={clickHandler} />)} />
-                <MainRenderProp render={(count, clickHandler) => (<MouseHoverPropComponent count={count} clickHandler={clickHandler} />)} />
+                {/* <MainRenderProp render={(count, clickHandler) => (<ClickRenderPropComponent count={count} clickHandler={clickHandler} />)} />
+                <MainRenderProp render={(count, clickHandler) => (<MouseHoverPropComponent count={count} clickHandler={clickHandler} />)} /> */}
+                <UserProvider value="Siddhu">
+                    <AComponent />
+                </UserProvider>
+
             </div>
         )
     }
