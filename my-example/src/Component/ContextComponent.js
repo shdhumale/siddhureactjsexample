@@ -1,9 +1,10 @@
 import React from 'react'
 
-const myContext = React.createContext()
+const UserContext = React.createContext("Default Value")
 
-const UserProvider = myContext.Provider
+const UserProvider = UserContext.Provider
 
-const UserConsumer = myContext.Consumer
+const UserConsumer = UserContext.Consumer
 
 export { UserProvider, UserConsumer }
+export default UserContext
