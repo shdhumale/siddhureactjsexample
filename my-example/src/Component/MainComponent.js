@@ -21,6 +21,10 @@ import PortalRootComponent from './PortalRootComponent'
 import HeroMainComponent from './HeroMainComponent'
 import ClickIncrementComponent from './ClickIncrementComponent'
 import MouseHoverIncrement from './MouseHoverIncrement'
+import UserPropRender from './UserPropRender'
+import ClickRenderPropComponent from './ClickRenderPropComponent'
+import MouseHoverPropComponent from './MouseHoverPropComponent'
+import MainRenderProp from './MainRenderProp'
 
 class MainComponent extends React.Component {
 
@@ -58,8 +62,14 @@ class MainComponent extends React.Component {
                 {/* <RefParentComponent /> */}
                 {/* <PortalRootComponent /> */}
                 {/* <HeroMainComponent /> */}
-                <ClickIncrementComponent name="siddhuclickprop" incrementValue="7" />
-                <MouseHoverIncrement />
+                {/*     <ClickIncrementComponent name="siddhuclickprop" incrementValue="7" />
+                <MouseHoverIncrement /> */}
+                {/* <UserPropRender name="Siddharatha Dhumale" /> */}
+                {/*  <UserPropRender name={(isLoggedIn) => isLoggedIn ? "Siddharatha Dhumale" : "Guest"} /> */}
+                {/* <ClickRenderPropComponent />
+                <MouseHoverPropComponent /> */}
+                <MainRenderProp render={(count, clickHandler) => (<ClickRenderPropComponent count={count} clickHandler={clickHandler} />)} />
+                <MainRenderProp render={(count, clickHandler) => (<MouseHoverPropComponent count={count} clickHandler={clickHandler} />)} />
             </div>
         )
     }
