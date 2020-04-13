@@ -30,6 +30,7 @@ import AComponent from './AComponent'
 import { UserProvider } from './ContextComponent'
 import AxiosGetRequest from './AxiosGetRequest'
 import AxiosPostComponent from './AxiosPostComponent'
+import MyRouterComponent from './MyRouterComponent'
 
 class MainComponent extends React.Component {
 
@@ -79,7 +80,8 @@ class MainComponent extends React.Component {
                     <AComponent />
                 </UserProvider> */}
                 {/* <AxiosGetRequest /> */}
-                <AxiosPostComponent />
+                {/*  <AxiosPostComponent /> */}
+                <MyRouterComponent />
 
             </div>
         )
