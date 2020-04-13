@@ -13,6 +13,8 @@ export class AxiosGetRequest extends Component {
     }
 
     componentDidMount() {
+        //Invalid url
+        //axios.get('https://jsonplaceholder.typicode.com/posts1')
         axios.get('https://jsonplaceholder.typicode.com/posts')
             .then((response) => {
                 console.log(response)

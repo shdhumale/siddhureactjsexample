@@ -1,3 +1,4 @@
+
 import React from 'react';
 import SiddhuFirstFunctionComponent from './SiddhuFirstFunctionComponent';
 import JSXComponent from './JSXComponent'
@@ -28,6 +29,7 @@ import MainRenderProp from './MainRenderProp'
 import AComponent from './AComponent'
 import { UserProvider } from './ContextComponent'
 import AxiosGetRequest from './AxiosGetRequest'
+import AxiosPostComponent from './AxiosPostComponent'
 
 class MainComponent extends React.Component {
 
@@ -76,7 +78,8 @@ class MainComponent extends React.Component {
                 {/* <UserProvider value="Siddhu">
                     <AComponent />
                 </UserProvider> */}
-                <AxiosGetRequest />
+                {/* <AxiosGetRequest /> */}
+                <AxiosPostComponent />
 
             </div>
         )
